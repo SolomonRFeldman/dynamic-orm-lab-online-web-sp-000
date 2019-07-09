@@ -60,7 +60,7 @@ class InteractiveRecord
     WHERE '#{attribute.keys.first}' = '#{attribute.values.first}'
     "
     
-    DB
+    DB[:conn].execute(sql)
   end
   
 end
